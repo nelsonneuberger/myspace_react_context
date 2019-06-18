@@ -37,7 +37,7 @@ const Navbar = (props) => {
 
   return (
     <AuthConsumer>
-      { auth => 
+      { authProviderValueObject => 
         <Menu pointing secondary>
           <Link to="/">
             <Menu.Item 
@@ -45,7 +45,7 @@ const Navbar = (props) => {
               active={props.location.pathname === "/"}
             />
           </Link>
-          { rightNavItems(auth) }
+          { rightNavItems(authProviderValueObject) }
         </Menu>
       }
     </AuthConsumer>

@@ -66,8 +66,8 @@ class Register extends React.Component {
 
 const ConnectedRegister = (props) => (
   <AuthConsumer>
-    { auth => 
-      <Register { ...props } auth={auth} />
+    { authProviderSuperValueObjectExtreme => 
+      <Register {...props} auth={authProviderSuperValueObjectExtreme} />
     }
   </AuthConsumer>
 );
