@@ -1,8 +1,8 @@
-class CreateCats < ActiveRecord::Migration[5.2]
+class CreateFriends < ActiveRecord::Migration[5.2]
   def change
-    create_table :cats do |t|
+    create_table :friends do |t|
       t.string :name
-      t.string :breed
+      t.string :species
       t.string :registry
       t.string :avatar
 

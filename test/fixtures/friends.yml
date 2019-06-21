@@ -2,12 +2,12 @@
 
 one:
   name: MyString
-  breed: MyString
+  species: MyString
   registry: MyString
   avatar: MyString
 
 two:
   name: MyString
-  breed: MyString
+  species: MyString
   registry: MyString
   avatar: MyString

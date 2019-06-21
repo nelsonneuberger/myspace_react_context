@@ -7,16 +7,16 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   include DeviseTokenAuth::Concerns::User
 
-  serialize :liked_cats, Array
+  serialize :liked_friends, Array
 
-  def self.random_cat(ids)
+  def self.random_friend(ids)
     ids = ids.empty? ? [0] : ids
-    Cat.where("id NOT IN (?)", ids).order("RANDOM()")
+    Friend.where("id NOT IN (?)", ids).order("RANDOM()")
   end
 
   def self.liked(ids)
     ids = ids.empty? ? [0] : ids
-    Cat.where("id IN (?)", ids)
+    Friend.where("id IN (?)", ids)
   end
 
 end

@@ -1,9 +1,9 @@
 200.times do 
-  name = Faker::Creature::Cat.name
-  breed = Faker::Creature::Cat.breed
-  registry = Faker::Creature::Cat.registry
+  name = Faker::Creature::Friend.name
+  species = Faker::Creature::Friend.species
+  registry = Faker::Creature::Friend.registry
   avatar = Faker::Avatar.image(name, "100x400", "png", "set4")
-  Cat.create(name: name, breed: breed, registry: registry, avatar: avatar)
+  Friend.create(name: name, species: species, registry: registry, avatar: avatar)
 end
 
-puts "200 Cats Seeded"
+puts "200 Friends Seeded"
