@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link, } from "react-router-dom";
 import { Header, Image, Card, Button, Icon, } from "semantic-ui-react";
 
+<<<<<<< HEAD
 const Home = () => {
   const [cats, setCats] = useState([]);
 
@@ -69,5 +70,10 @@ const Home = () => {
     return <Header as="h2" textAlign="center">No More Cats</Header>
   };
 };
+=======
+const Home = () => (
+  <Header as="h3" textAlign="center">LieSpace</Header>
+);
+>>>>>>> 8ce25db501a545d7d4bbb245d961bf636af56993
 
 export default Home;
